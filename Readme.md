@@ -1,4 +1,4 @@
-This obsidian vault is a simplified version adopted from [How I use Obsidian](https://stephango.com/vault).
+This obsidian vault is a simplified version adopted from kepano's [How I use Obsidian](https://stephango.com/vault).
 
 
 ## Get started

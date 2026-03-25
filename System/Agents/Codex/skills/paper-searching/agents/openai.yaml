@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Searching"
+  short_description: "Find and summarize relevant papers"
+  default_prompt: "Use $paper-searching to find relevant academic papers for my topic and turn them into an Obsidian note."

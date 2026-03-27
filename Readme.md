@@ -33,7 +33,20 @@ Instead of searching through folders, use the notes in `/Categories` to navigate
 The vault uses `.base` files (found in `/Templates/Bases`) to create database-like views. These allow you to filter and sort notes by their YAML properties without manual indexing.
 
 ### 3. AI Skills
-The `/System/Agents/ai/skills` directory defines specialized capabilities for AI agents interacting with this vault. Each skill includes procedural instructions and often helper scripts (Python/Bash) for advanced file processing.
+The vault is equipped with a suite of AI skills located in `System/Agents/ai/skills/` that extend the agent's capabilities:
+
+- **obsidian-cli**: Interact with the running Obsidian instance to manage notes, tasks, and properties.
+- **obsidian-bases**: Create and manage dynamic `.base` database views.
+- **obsidian-markdown**: Expertise in Obsidian-specific markdown syntax (wikilinks, callouts, etc.).
+- **xlsx / docx / pptx / pdf**: Comprehensive tools for creating, editing, and analyzing office documents and PDFs.
+- **paper-summarizer / paper-searching**: Automated tools for academic research.
+  - *Example prompt:* "Search for recent papers on LLM agent orchestration and save a summary to my References folder."
+  - *Example prompt:* "Summarize the paper at https://arxiv.org/abs/2303.17564 into a new research note."
+  - *Explicit call:* "use skill: paper-searching with the following keywords: large language models, benchmark"
+- **json-canvas**: Create and edit visual Obsidian Canvas files.
+- **defuddle**: Web content extraction optimized for LLM context.
+- **skill-creator**: A framework for building and extending these very skills.
+
 
 ### 4. Tags
 

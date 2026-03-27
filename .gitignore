@@ -4,5 +4,8 @@
 *.lk
 *.zip
 
-.obsidian/*
+.obsidian/
+GEMINI.md
+AGENT.md
+
 

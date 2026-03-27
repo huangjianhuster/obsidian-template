@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Readme.md",
+                "file": "Templates/Spark Template.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Readme"
+              "title": "Spark Template"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Readme.md",
+                "file": "Templates/Spark Template.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Readme"
+              "title": "Backlinks for Spark Template"
             }
           },
           {
@@ -169,7 +169,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 240.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,7 +185,11 @@
   },
   "active": "3e90dcb914a2d140",
   "lastOpenFiles": [
+    "Templates/Project Template.md",
+    "Templates/Spark Template.md",
     "Templates/Daily Note Template.md",
+    "Templates/Clipping Template.md",
+    "Readme.md",
     "Templates/Job Interview Template.md",
     "Templates/Event Template.md",
     "Templates/Untitled.md",
@@ -192,7 +197,6 @@
     "Templates/Bases/Templates.base",
     "References/Example_reference.md",
     "Templates/Bases/Related.base",
-    "Templates/Project Template.md",
     "Templates/Stock Trade Template.md",
     "Templates/Conference Template.md",
     "Daily/2026-03-16.md",
@@ -203,7 +207,6 @@
     "Notes/Product usage analysis.md",
     "Daily/2023-09-12.md",
     "Daily/2023-09-30.md",
-    "Readme.md",
     "References/Well Made 145 Kevin Kelly.md",
     "References/Parks.md",
     "References/Out of Control.md",
@@ -211,8 +214,6 @@
     "References/Bass on Top.md",
     "References/Futurama.md",
     "References/Jazz.md",
-    "References/Kevin Kelly.md",
-    "References/Catan.md",
     "Templates/Bases/Attachments.base",
     "Templates/Bases/Clippings.base",
     "Templates/Bases/Spark.base",

@@ -1,5 +1,5 @@
 ---
-categories:
+category:
   - "[[Sparks]]"
 url: https://google.com/
 ---

@@ -58,23 +58,19 @@ The vault is equipped with a suite of AI skills located in `System/Agents/ai/ski
 
 ### 4. Tags
 
-This vault assumes user should completely rely on the `tags` field in the metadata header to organize notes. Check the yaml style metadata header example from:
+This vault assumes user should completely rely on the `tags` field in the metadata header to organize notes. A metadata header example is:
 ```
-./Notes/Example_project
-
-### which has the following header
 ---
-categories:
+category:
   - "[[Projects]]"
 start: 2025-10-01
-end: 2025-12-30
 tags:
  - biophysics
 ---
 ```
 
-- For different categories of notes, you should create a template (inside `./Templates`, check examples there) to help you automatically generate the header, instead of typing manually.
-- Obsidian allows hierarchical structures in tags, for example: `biophysics/proteinfolding/IDPs`.
+- For different categories of notes, you should create a template (inside `./Templates`, check examples there) to help you automatically generate the header, instead of having to type them manually each time.
+- Obsidian allows hierarchical structures in tags, for example: `biophysics/proteinfolding/IDPs`. As such, tags are more flexible than using the usual "tree structure" directory/folder-based organization scheme.
 
 ### 5. Rules
 A pre-defined `RULEs.md` under `./System` is meant for various AI agents. It sets the basic rules (styling, formatting and file location preferences) for AI-generated notes inside your vault.
@@ -85,6 +81,7 @@ ln -s ./System/RULEs.md GEMINI.md
 ```
 
 - The `RULEs.md` functions similarly to the so-called system prompts, which are pre-appended to the user-defined prompts during communicating with remote language models.
+- Using a soft link to centralize the rules: we only need to modify the source `RULEs.md` to apply changes for all ai platforms.
 
 - The following rules are defined:
 1. always insert `created`, `category` and `tags` field in the metadata.

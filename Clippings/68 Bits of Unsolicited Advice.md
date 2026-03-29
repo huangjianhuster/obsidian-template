@@ -1,5 +1,5 @@
 ---
-categories:
+category:
   - "[[Clippings]]"
 author:
   - "[[Kevin Kelly]]"

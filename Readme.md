@@ -46,15 +46,14 @@ The vault is equipped with a suite of AI skills located in `System/Agents/ai/ski
 - **obsidian-cli**: Interact with the running Obsidian instance to manage notes, tasks, and properties.
 - **obsidian-bases**: Create and manage dynamic `.base` database views.
 - **obsidian-markdown**: Expertise in Obsidian-specific markdown syntax (wikilinks, callouts, etc.).
+- **json-canvas**: Create and edit visual Obsidian Canvas files.
+- **defuddle**: Web content extraction optimized for LLM context.
+- **skill-creator**: A framework for building and extending these very skills.
 - **xlsx / docx / pptx / pdf**: Comprehensive tools for creating, editing, and analyzing office documents and PDFs.
 - **paper-summarizer / paper-searching**: Automated tools for academic research.
   - *Example prompt:* "Search for recent papers on LLM agent orchestration and save a summary to my References folder."
   - *Example prompt:* "Summarize the paper at https://arxiv.org/abs/2303.17564 into a new research note."
   - *Explicit call:* "use skill: paper-searching with the following keywords: large language models, benchmark"
-- **json-canvas**: Create and edit visual Obsidian Canvas files.
-- **defuddle**: Web content extraction optimized for LLM context.
-- **skill-creator**: A framework for building and extending these very skills.
-
 
 ### 4. Tags
 
@@ -81,11 +80,11 @@ ln -s ./System/RULEs.md GEMINI.md
 ```
 
 - The `RULEs.md` functions similarly to the so-called system prompts, which are pre-appended to the user-defined prompts during communicating with remote language models.
-- Using a soft link to centralize the rules: we only need to modify the source `RULEs.md` to apply changes for all ai platforms.
+- Using a soft link to centralize the rules: we only need to modify the source `RULEs.md` to apply changes for all AI platforms.
 
 - The following rules are defined:
 1. always insert `created`, `category` and `tags` field in the metadata.
-2. auto-assigning `categories` and keep the `category` list updated whenever using AI to write notes.
+2. auto-assigning `category` and keep the `category` list updated whenever using AI to write notes.
 3. File location preference: `./Notes`
 4. Web links: try to minimize hallucinations.
 

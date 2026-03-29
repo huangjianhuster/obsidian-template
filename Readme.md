@@ -1,8 +1,16 @@
 This obsidian vault is a simplified version adopted from kepano's [How I use Obsidian](https://stephango.com/vault), extended with a modular agent-skill framework. 
 
 This vault is suitable if you are looking for:
-- a clean and simple vault structure for scientific usage
-- pre-installed/configured AI skills (with obsidian-related skills and others)
+- a clean and simple vault structure for scientific usage.
+- pre-installed/configured AI skills.
+
+## Get Started
+
+1. **Download the Vault**, and use Obsidian to open it.
+2. **Explore Dashboards**: Open `Categories/Projects.md` or `Categories/Sparks.md`. Modify to your own preference.
+3. **Daily Logging**: the "Daily Note" should only be used as indexing; All notes created in a specific date will be shown here.
+4. Use `unique note creator` (from core plugins in obsidian) for creating new notes and apply a specific template.
+5. **Templates**: Use the `Templates/` folder when creating new projects or meeting notes to ensure consistent metadata.
 
 ## Basic Structure
 
@@ -50,7 +58,7 @@ The vault is equipped with a suite of AI skills located in `System/Agents/ai/ski
 
 ### 4. Tags
 
-You should completely rely on the `tags` field in the metadata header to organize notes. Check the yaml style metadata header example from:
+This vault assumes user should completely rely on the `tags` field in the metadata header to organize notes. Check the yaml style metadata header example from:
 ```
 ./Notes/Example_project
 
@@ -65,14 +73,24 @@ tags:
 ---
 ```
 
-For different categories of notes, you should create a template (inside `./Templates`, check examples there) to help you automatically generate the header, instead of typing manually.
+- For different categories of notes, you should create a template (inside `./Templates`, check examples there) to help you automatically generate the header, instead of typing manually.
+- Obsidian allows hierarchical structures in tags, for example: `biophysics/proteinfolding/IDPs`.
+
+### 5. Rules
+A pre-defined `RULEs.md` under `./System` is meant for various AI agents. It sets the basic rules (styling, formatting and file location preferences) for AI-generated notes inside your vault.
+
+Read the rules and modify according to your own preference. And for using it for example with the `gemini cli`, simply do:
+```bash
+ln -s ./System/RULEs.md GEMINI.md
+```
+
+- The `RULEs.md` functions similarly to the so-called system prompts, which are pre-appended to the user-defined prompts during communicating with remote language models.
+
+- The following rules are defined:
+1. always insert `created`, `category` and `tags` field in the metadata.
+2. auto-assigning `categories` and keep the `category` list updated whenever using AI to write notes.
+3. File location preference: `./Notes`
+4. Web links: try to minimize hallucinations.
 
 
-## Get Started
-
-1. **Download the Vault**, and use Obsidian to open it.
-2. **Explore Dashboards**: Open `Categories/Projects.md` or `Categories/Sparks.md`. Modify to your own preference.
-3. **Daily Logging**: the "Daily Note" should only be used as indexing; All notes created in a specific date will be shown here.
-4. Use `unique note creator` (from core plugins in obsidian) for creating new notes and apply a specific template.
-5. **Templates**: Use the `Templates/` folder when creating new projects or meeting notes to ensure consistent metadata.
 

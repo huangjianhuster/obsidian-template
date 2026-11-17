@@ -3,17 +3,8 @@ categories:
   - "[[Meetings]]"
 type:
   - "[[Job Interviews]]"
-org:
-people: []
-date: {{date}}
-role:
-rating:
+Created: {{date}}
 ---
-## Questions and topics
-
-- 
-
-## Notes
 
 - 
 

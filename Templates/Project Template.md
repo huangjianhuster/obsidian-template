@@ -1,7 +1,9 @@
 ---
 categories:
   - "[[Projects]]"
-start:
+created: {{date}}
 status:
+tags:
+  - Project/md
 ---
 

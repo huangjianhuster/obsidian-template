@@ -9,8 +9,8 @@ This vault is suitable if you are looking for:
 1. **Download the Vault**, and use Obsidian to open it.
 2. **Explore Dashboards**: Open `Categories/Projects.md` or `Categories/Sparks.md`. Modify to your own preference.
 3. **Daily Logging**: the "Daily Note" should only be used as indexing; All notes created in a specific date will be shown here.
-4. Use `unique note creator` (from core plugins in obsidian) for creating new notes and apply a specific template.
-5. **Templates**: Use the `Templates/` folder when creating new projects or meeting notes to ensure consistent metadata.
+4. Use `unique note creator` (from core plugins in obsidian) for creating new notes and apply a specific template. Go to settings then `core plugins` to turn it on. 
+5. **Templates**: Use the `Templates/` folder when creating new projects or meeting notes to ensure consistent metadata. Go to `settings`, `core plugins`, `templates`, set the template folder location to be `Templates`.
 
 ## Basic Structure
 

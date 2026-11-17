@@ -4,3 +4,5 @@ tags:
 categories: "[[Daily notes]]"
 created: {{date}}
 ---
+
+![[Daily.base]]
